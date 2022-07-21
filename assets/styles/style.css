@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+	--label: #111;
+	--dark: #292C35;
+	--light: #F1F1F1;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.light{
+  background-color: var(--light);
+  color: var(--dark);
+}
+.dark{
+  background: var(--dark);
+  color: var(--light);
+}
+main{
+  border-radius: 59px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+button{
+  height: 46px;
+  border: 1px solid var(--label);
+  border-radius: 12px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 235px;
+  height: 102px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--label);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 88px;
+  width: 88px;
+  left: 4px;
+  bottom: 7px;
+  background-color: white;
+  -webkit-transition:.4s;
+  transition: .4s;
+}
+input:not(:checked) + .slider{
+  background-image: url('../images/sun.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 78.46px;
+}
+input:checked + .slider {
+  background-image: url('../images/moon.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 94.15px;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(140px);
+  -ms-transform: translateX(140px);
+  transform: translateX(140px);
+}
+.slider.round {
+  border-radius: 59px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+footer{
+  padding: 1rem;
+}
