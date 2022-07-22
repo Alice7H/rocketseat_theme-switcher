@@ -11,12 +11,12 @@ O projeto é uma página que contenha um toggle para alternar entre o tema dark 
 ### Requisitos para o desafio:
 
 - Alterar o tema da página ao clicar no toggle;
-- Ter uma transição entre um ícone e outro;
+- Ter uma transição entre um ícone e outro.
 
 **_Se desafie também:_**
 
 - Salvando o tema no Local Storage;
-- Adicionar textos e alterar a cor conforme o tema alterne entre light e dark;
+- Adicionar textos e alterar a cor conforme o tema alterne entre light e dark.
 
 ### Cores:
 
@@ -36,4 +36,11 @@ O projeto é uma página que contenha um toggle para alternar entre o tema dark 
 
 ## Layout
 
-- O layout do projeto encontra-se no [figma](https://www.figma.com/file/iOuqAlZvhAMkkfjCMFyc7Y/DD-%2F-Sidebar-Responsiva/duplicate)
+- O layout do projeto original encontra-se [aqui](https://www.figma.com/file/iOuqAlZvhAMkkfjCMFyc7Y/DD-%2F-Sidebar-Responsiva/duplicate).
+- Você deve ter uma conta no [figma](https://www.figma.com) para obter acesso ao design.
+
+**_Extras:_**
+
+- Cores foram adicionadas ou modificadas;
+- Alterar o tema, de acordo com o tema salvo no Local Storage;
+- Remover tema do Local Storage.
