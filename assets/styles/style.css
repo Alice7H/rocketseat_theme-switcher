@@ -10,33 +10,58 @@
 	--label: #111;
 	--dark: #292C35;
 	--light: #F1F1F1;
+
+  --bg-color: var(--dark);
+  --text-color: var(--light);
+  --bg-button: #149FC2;
+  --bg-button-hover: #005B96;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: var(--bg-color);
 }
-.light{
-  background-color: var(--light);
-  color: var(--dark);
+.light {
+  --bg-color: var(--light);
+  --text-color: var(--dark);
+  --bg-button: #FFD700;
+  --bg-button-hover: #DC6900;
 }
-.dark{
-  background: var(--dark);
-  color: var(--light);
-}
-main{
+main {
   border-radius: 59px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-button{
+button {
   height: 46px;
-  border: 1px solid var(--label);
+  border: 1px solid var(--bg-button-hover);
   border-radius: 12px;
+  transition: .5s;
+  color: var(--text-color);
+  background-color: var(--bg-button);
+  cursor: pointer;
 }
+button:hover {
+  background-color: var(--bg-button-hover);
+}
+h1,p {
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  padding: 1rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -92,13 +117,4 @@ input:checked + .slider:before {
 }
 .slider.round:before {
   border-radius: 50%;
-}
-a{
-  text-decoration: none;
-}
-a:hover{
-  text-decoration: underline;
-}
-footer{
-  padding: 1rem;
 }
