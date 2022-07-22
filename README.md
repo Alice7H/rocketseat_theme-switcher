@@ -1,5 +1,3 @@
-- arrumar o transition do sidebar
-
 <h1 align="center">
   <img alt="Capa" title="Capa" src="./assets/images/capa.png" />
 </h1>
